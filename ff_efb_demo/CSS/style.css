@@ -1,0 +1,419 @@
+.segment .a320-service {
+    border: 1px solid rgb(110, 110, 110) !important;
+    background: #252525;
+    box-shadow: 3px 3px 6px 2px rgba(36, 36, 36, 0.8) !important;
+    height: 98%;
+}
+
+.a320-segment {
+    align-self: stretch;
+}
+
+.a320-tab-segment {
+    padding: 0 !important;
+}
+
+.a320-animate-segment {
+    padding: 1rem 0;
+}
+
+.a320-control-panel {
+    width: 360px;
+}
+
+.a320-toggle-panel {
+    margin: 14px 3px 8px 1px;
+    width: 6px;
+    border-left: 2px dotted rgb(110, 110, 110);
+    border-right: 2px dotted rgb(110, 110, 110);
+    cursor: pointer;
+}
+
+.a320-content-panel {
+    width: 618px; /* constant width for no recalculate contents and smooth animation */
+    margin: auto;
+    display: none;
+}
+
+.a320-layer {
+    position: relative;
+}
+
+.a320-layer .a320-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.a320-content-panel-group {
+    flex: 1 1 auto;
+}
+
+.a320-content-panel.active {
+    display: block;
+}
+
+.a320-no-lr-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.a320-no-tb-padding {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.a320-no-t-padding {
+    padding-top: 0 !important;
+}
+
+.a320-no-padding {
+    padding: 0 !important;
+}
+
+.a320-bl {
+    border-left: 1px solid !important;
+}
+.a320-bold {
+    font-weight: bold;
+}
+.a320-disabled-cell {
+    background-color: #6e6e6e;
+}
+
+.a320-blend-input {
+    border: none !important;
+    border-radius: 0 !important;
+    width: 70px !important;
+    padding-right: 0 !important;
+    background-color: #363636 !important;
+}
+
+.a320-perf-set {
+    padding: 4px !important;
+    width: 100%;
+}
+
+.a320-animate-state {
+    background: linear-gradient(to left, #6284ff 80%, #3662ff, #6284ff) !important;
+    background-position: 0 0;
+    animation: sas 4s infinite linear;
+}
+.a320-switch-btn {
+    width: 100%;
+}
+
+.a320-switcherOn {
+    background-color: #3662ff !important;
+}
+
+@keyframes sas {
+    100% {
+        background-position: 300px 0;
+    }
+}
+
+#gpu, #asu {
+    stroke: #c4c4c4;
+    fill: #c4c4c4;
+    /*stroke-opacity: 1; */
+}
+
+#gKeyInput input[type=text] {
+    text-align: center;
+}
+
+#gKeyInput #gKey {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+/**** checklist ****/
+.list {
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+    position: absolute;
+    transform: translateX(646px);
+    z-index: 1;
+}
+
+#frame {
+    top: 0;
+    left: 0;
+    width: 645px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.items-overflow {
+    height: 588px;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.arrow-up {
+    position: absolute;
+    top: 44px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QgZEB4Y16Y1qgAAAB5pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCBieSBjZXAuNmVwstvxmAAAAI1JREFUOMvt0LERgCAMBdCfNG5gaYXjsASuQekcLsBIWlm6gRU2FBZGEgsr/h0FIRfgAS2/JMzZhTk7TS8phnUA9rIdlkjnWz8rLk0A+rJSrZkrr5sA+FvJl5r9y8VsFY7HJdKmHnhz64WBh+TJFTcpoicr3KQ8epLBDRpPMrhB48kGN5UnG91Mni3fcgGSgTMoJJW3tAAAAABJRU5ErkJggg==');
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 6px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QgZEB4Y16Y1qgAAAB5pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCBieSBjZXAuNmVwstvxmAAAAI1JREFUOMvt0LERgCAMBdCfNG5gaYXjsASuQekcLsBIWlm6gRU2FBZGEgsr/h0FIRfgAS2/JMzZhTk7TS8phnUA9rIdlkjnWz8rLk0A+rJSrZkrr5sA+FvJl5r9y8VsFY7HJdKmHnhz64WBh+TJFTcpoicr3KQ8epLBDRpPMrhB48kGN5UnG91Mni3fcgGSgTMoJJW3tAAAAABJRU5ErkJggg==');
+    transform: rotate(180deg);
+}
+
+.items-scroll {
+    top: 0;
+    position: relative;
+    z-index: 2;
+}
+
+#frame h4 {
+    margin: 28px 0 2px;
+    color: #6284ff;
+}
+#frame h5 {
+    margin: 0;
+    color: #6284ff;
+}
+
+.divider {
+    margin: 0;
+    height: 18px;
+}
+
+.list div.item {
+    height: 20px;
+    position: relative;
+    margin: 0 0 4px 30px;
+    text-align: left;
+    line-height: 20px;
+}
+
+.list div.header {
+    color: sandybrown;
+    margin: 4px 30px 2px;
+    text-align: left;
+    height: 20px;
+    line-height: 20px;
+}
+
+.item-name {
+    padding: 0 8px 0 30px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #363636;
+}
+
+.item-dotted {
+    z-index: 0;
+    font-family: monospace;
+    position: absolute;
+}
+.item-value {
+    padding: 0 30px 0 8px;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #363636;
+}
+
+.a320-slider {
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    height: 686px;
+    width: 680px;
+    margin: 0 auto;
+}
+
+.a320-left-knob {
+    border-right: 1px solid;
+    width: 16px;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+}
+
+.a320-center-frame {
+    width: 565px;
+    height: 100%;
+    float: left;
+}
+
+.a320-right-knob {
+    border-left: 1px solid;
+    width: 16px;
+    height: 100%;
+    float: right;
+    cursor: pointer;
+}
+
+.a320-left-knob::after, .a320-right-knob::after {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 60px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QgZEB4Y16Y1qgAAAB5pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCBieSBjZXAuNmVwstvxmAAAAI1JREFUOMvt0LERgCAMBdCfNG5gaYXjsASuQekcLsBIWlm6gRU2FBZGEgsr/h0FIRfgAS2/JMzZhTk7TS8phnUA9rIdlkjnWz8rLk0A+rJSrZkrr5sA+FvJl5r9y8VsFY7HJdKmHnhz64WBh+TJFTcpoicr3KQ8epLBDRpPMrhB48kGN5UnG91Mni3fcgGSgTMoJJW3tAAAAABJRU5ErkJggg==');
+}
+
+.a320-left-knob::after {
+    transform: rotate(-90deg) translate3d(-330px, -31px, 0);
+}
+
+.a320-right-knob::after {
+    transform: rotate(90deg) translate3d(330px, 31px, 0);
+}
+
+.slide-to-show {
+    transition: transform 1s;
+    transform: translateX(0px);
+}
+
+.slide-to-hide-from-right {
+    transition: transform 1s;
+    transform: translateX(-646px);
+}
+
+.slide-to-hide-from-left {
+    transition: transform 1s;
+    transform: translateX(646px);
+}
+
+/************************************/
+
+#browserTab, #controlTab {
+    /*display: none;*/
+}
+
+.a320-half-row {
+    width: 50%;
+}
+
+.a320-server-field-set {
+    border-radius: 4px;
+    line-height: 1.4em;
+}
+
+.a320-server-field-set legend {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.a320-right-aligned input {
+    text-align: right !important;
+}
+
+.a320-alert {
+    height: 100px;
+    position: relative;
+}
+
+.a320-alert div {
+    position: absolute;
+    bottom: 0;
+}
+
+.settings .dropdown {
+    width: 16em;
+}
+
+.ui .table {
+    line-height: 1.4em;
+}
+
+.a320-float-button {
+    float: right;
+}
+
+#vKeyboardCall {
+    padding: 6px;
+    margin: 6px;
+}
+
+#vKeyboard, #vKeyboardNum {
+    width: 356px;
+    z-index: 10;
+    position: absolute;
+    padding: 2px 6px 6px 2px;
+    margin: 3px 6px 6px 3px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    background-color: #6e6e6e;
+    text-align: center;
+}
+
+#vKeyboard.hide, #vKeyboardNum.hide,
+#chars.hide, #symbol.hide,
+#page1_2.hide, #page2_2.hide,
+#lowercase.hide, #uppercase.hide {
+    display: none;
+}
+
+#vKeyboard.show, #vKeyboardNum.show {
+    display: inline-block;
+}
+
+#vKeyboard .button {
+    margin: 3px 0 0 3px;
+    padding: 6px;
+    min-width: 29px;
+    box-shadow: 2px 2px 2px 2px #252525;
+}
+
+#vKeyboardNum .button {
+    font-size: 2.6em;
+    margin: 3px 0 0 3px;
+    padding: 6px;
+    min-width: 60px;
+    box-shadow: 2px 2px 2px 2px #252525;
+}
+
+#vKeyboardNum .space{
+    width: 20px;
+}
+
+#vKeyboard .space {
+    width: 154px;
+}
+
+#vKeyboard #chars .chars-symbol,
+#vKeyboard #symbol .chars-symbol {
+    width: 46px;
+}
+
+#vKeyboard .shift,
+#vKeyboard .page {
+    width: 40px;
+}
+
+
+.failure-script-view-container {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.failure-script-editor-page {
+    width: 100%;
+    height: 400px;
+}

@@ -1,0 +1,129 @@
+.fap_body{
+	width: 1024px; 
+    height: 694px; 
+	spacing:0px;
+	padding:0px;
+	margin:0px;
+	overflow: hidden;
+	color:#fcffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:0px;
+	-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+.fap_bla{
+	position:absolute;
+	float:left;	
+	background-color:#adb2b5;
+	border-width: 1vmin;
+    border-style: solid;
+    border-image: url('../Resources/FAP/Border_box.png') 33% round stretch;
+	z-index:1000;
+	line-height:1em;
+}
+
+#fap_border{
+	border-width: 1.1vmin;
+    border-style: solid;
+    border-image: url('../Resources/FAP/Border.png') 33% round stretch;
+	width: 100%; 
+    height: 100%; 
+    position: absolute;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */		
+	background-image:url('../Resources/FAP/Background.png');
+}
+
+#fap_screensaver{
+	width: 100%; 
+    height: 100%; 
+    position: absolute;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */	
+	background-color:white;
+	z-index:1100;
+}
+.fap_interface{
+	width: 100%; 
+    height: 100%; 
+    position: absolute;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */	
+	z-index:1004;
+	pointer-events: none;
+}
+
+#fap_loading{
+	width: 100%; 
+    height: 100%; 
+    margin: auto;
+    position: absolute;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */	
+	background-color:grey;
+	color:#dbe9f4;
+	font-size:2vw;
+	text-align:center;
+	display:none;
+	z-index:1003;
+}
+
+#fap_container{
+	width:100%;
+	height:100%;
+	top:1%;bottom:0%;
+	left:1%;right:1%;
+	margin:0px;padding:0px;
+
+}
+.fap_body td,tr,p,img,div{
+	margin:0px;padding:0px;
+}
+
+.fap_aircraft{
+	background-image:url('../Resources/FAP/Aircraft2.png');
+	background-repeat: no-repeat;
+	background-position: center bottom	; 
+	background-size: 45% 95%;
+	vertical-align:top;
+}
+.fap_thermometer{
+	background-image:url('../Resources/FAP/thermometer.png');
+	background-repeat: no-repeat;
+	background-position: center bottom	; 
+	background-size: 60% 100%;
+	vertical-align:top;
+
+}
+.fap_button{
+	cursor: pointer;
+	background-image:url('../Resources/FAP/button_normal.png');
+	background-size: 100% 100%;
+	background-position: center bottom;
+	border:0px;
+	background-color: Transparent;
+	outline:none;
+	vertical-align:middle;
+	text-align:center;
+	pointer-events: auto;
+}
+.fap_buttonamber{
+	cursor: pointer;
+	background-image:url('../Resources/FAP/button_amber.png');
+	background-size: 100% 100%;
+	background-position: center bottom;
+	background-color: Transparent;
+	border:0px;
+	outline:none;
+	vertical-align:middle;
+	text-align:center;
+	pointer-events: auto;
+}
+.fap_button:active{
+	cursor: pointer;
+	background-image:url('../Resources/FAP/button_active.png');
+	background-size: 100% 100%;
+	background-position: center bottom;
+	vertical-align:middle;
+	text-align:center;
+	pointer-events: auto;
+}

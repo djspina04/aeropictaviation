@@ -1,0 +1,883 @@
+#MCDU_FULL {
+    font-family: 'TestFont';
+    font-size: 2.6vh;
+}
+
+@font-face {
+    font-family: TestFont;
+    src: url('/Resources/mcdu/LCDFont.ttf');
+}
+
+#AllContainer {
+    position: abolsolute;
+    margin-top: 0;
+}
+
+#MCDU_FULL {
+    position: relative;
+    margin-top: 0;
+    height: 89vh;
+    width: 56.8vh;
+    background-size: contain !important;
+    background: url('/Resources/mcdu/Layout.jpg') no-repeat;
+    box-shadow: 0 15px 15px 15px grey;
+}
+
+#MCDU_HEADER {
+    height: 5.4%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+#MCDU_SETTINGS {
+    position: relative;
+    margin-right: 0;
+    float: right;
+    height: 100%;
+    width: 8%;
+    background-size: contain;
+    background: url('/Resources/mcdu/Settings.png') no-repeat;
+}
+
+#SETTINGS_DIV {
+    display: none;
+    position: absolute;
+    top: 5.8%;
+    left: 14%;
+    width: 71%;
+    height: 41%;
+    border-radius: 3%;
+    background-color: black;
+    z-index: 1002;
+    overflow: auto;
+    color: white;
+}
+
+.SETTINGS_BOX {
+    border: solid 1px lightblue;
+    display: inline;
+    background-color: black;
+    color: white;
+}
+
+#MCDU_LSKLEFT {
+    position: relative;
+    margin-top: 12.3%;
+    margin-left: 1.6%;
+    height: 29%;
+    width: 6.4%;
+    float: left;
+    opacity: 0.4;
+}
+
+#MCDU_SCREEN {
+    position: relative;
+    margin-top: 4%;
+    margin-left: 7.5%;
+    height: 37.5%;
+    width: 69%;
+    float: left;
+    opacity: 1;
+    display: table;
+    overflow: hidden;
+    background: black url('/Resources/mcdu/fingerprint-002.png');
+    background-size: contain;
+    z-index: 1000
+}
+
+#MCDU_LSKRIGHT {
+    position: relative;
+    margin-top: 12.3%;
+    margin-right: 2.5%;
+    height: 29%;
+    width: 6.4%;
+    float: right;
+    opacity: 0.4;
+}
+
+#MCDU_MODELINE1 {
+    position: relative;
+    margin-top: 70.7%;
+    margin-left: 11.0%;
+    height: 4.4%;
+    width: 79.5%;
+    opacity: 0.4;
+}
+
+#MCDU_MODELINE2 {
+    position: relative;
+    margin-top: 1.2%;
+    margin-left: 11.0%;
+    height: 4.4%;
+    width: 79.5%;
+    opacity: 0.4;
+}
+
+#MCDU_MODELINE3 {
+    position: absolute;
+    float: left;
+    margin-top: 1.6%;
+    margin-left: 11.1%;
+    height: 4.4%;
+    width: 22%;
+    opacity: 0.4;
+}
+
+#MCDU_MODELINE4 {
+    position: absolute;
+    float: left;
+    margin-top: 10%;
+    margin-left: 11.0%;
+    height: 4.4%;
+    width: 22%;
+    opacity: 0.4;
+}
+
+#MCDU_MODELINE5 {
+    position: absolute;
+    float: left;
+    margin-top: 18.5%;
+    margin-left: 11.0%;
+    height: 4.4%;
+    width: 22%;
+    opacity: 0.4;
+}
+
+#MCDU_NUMBERPAD {
+    position: absolute;
+    float: left;
+    margin-top: 27.5%;
+    margin-left: 11.3%;
+    height: 19.5%;
+    width: 26%;
+    opacity: 0.4;
+}
+
+#MCDU_CHARPAD {
+    position: relative;
+    float: right;
+    margin-top: 4.7%;
+    margin-right: 12%;
+    width: 48%;
+    height: 34.5%;
+    opacity: 0.5;
+}
+
+#LSK_L1 {
+    position: relative;
+    margin-top: 0%;
+    width: 100%;
+    height: 9.7%;
+    cursor: pointer;
+}
+
+#LSK_L2 {
+    position: relative;
+    margin-top: 60%;
+    width: 100%;
+    height: 9.7%;
+    cursor: pointer;
+}
+
+#LSK_L3 {
+    position: relative;
+    margin-top: 60%;
+    width: 100%;
+    height: 9.7%;
+    cursor: pointer;
+}
+
+#LSK_L4 {
+    position: relative;
+    margin-top: 60%;
+    width: 100%;
+    height: 9.7%;
+    cursor: pointer;
+}
+
+#LSK_L5 {
+    position: relative;
+    margin-top: 60%;
+    width: 100%;
+    height: 9.7%;
+    cursor: pointer;
+}
+
+#LSK_L6 {
+    position: relative;
+    margin-top: 60%;
+    width: 100%;
+    height: 9.7%;
+    cursor: pointer;
+}
+
+#LSK_R1 {
+    position: relative;
+    margin-top: 0%;
+    width: 100%;
+    height: 9.7%;
+    cursor: pointer;
+}
+
+#LSK_R2 {
+    position: relative;
+    margin-top: 60%;
+    width: 100%;
+    height: 9.7%;
+    cursor: pointer;
+}
+
+#LSK_R3 {
+    position: relative;
+    margin-top: 60%;
+    width: 100%;
+    height: 9.7%;
+    cursor: pointer;
+}
+
+#LSK_R4 {
+    position: relative;
+    margin-top: 60%;
+    width: 100%;
+    height: 9.7%;
+    cursor: pointer;
+}
+
+#LSK_R5 {
+    position: relative;
+    margin-top: 60%;
+    width: 100%;
+    height: 9.7%;
+    cursor: pointer;
+}
+
+#LSK_R6 {
+    position: relative;
+    margin-top: 60%;
+    width: 100%;
+    height: 9.7%;
+    cursor: pointer;
+}
+
+div.LCD_ROW1 {
+    float: left;
+    width: 100%;
+    height: 7.143%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.LCD_ROW {
+    float: left;
+    margin-top: 0%;
+    width: 100%;
+    height: 7.143%;
+    display: table;
+    overflow: hidden;
+}
+
+div.LCD_CHAR {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 4% !important;
+    height: 100%;
+    color: white;
+    padding: 0;
+    line-height: 0.00;
+    margin: 0;
+}
+
+#btnDIR {
+    position: relative;
+    margin-left: 0;
+    width: 12%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnPROG {
+    position: relative;
+    margin-left: 3.3%;
+    width: 12%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnPERF {
+    position: relative;
+    margin-left: 3.3%;
+    width: 12%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnINIT {
+    position: relative;
+    margin-left: 3.3%;
+    width: 12%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnDATA {
+    position: relative;
+    margin-left: 3.3%;
+    width: 12%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnDATAr {
+    position: relative;
+    margin-left: 3.3%;
+    width: 12%;
+    height: 95%;
+    float: left;
+}
+
+#btnBRT {
+    position: relative;
+    margin-left: 3.8%;
+    width: 7.7%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnFPLAN {
+    position: relative;
+    margin-left: 0;
+    width: 12%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnRADNAV {
+    position: relative;
+    margin-left: 3.3%;
+    width: 12%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnFUELPRED {
+    position: relative;
+    margin-left: 3.3%;
+    width: 12%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnSECFPLAN {
+    position: relative;
+    margin-left: 3.3%;
+    width: 12%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnATCCOMM {
+    position: relative;
+    margin-left: 3.3%;
+    width: 12%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnMCDUMENU {
+    position: relative;
+    margin-left: 3.3%;
+    width: 12%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnDIM {
+    position: relative;
+    margin-left: 3.8%;
+    width: 7.7%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnAIRPORT {
+    position: relative;
+    margin-left: 0;
+    width: 45%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnAIRPORTr {
+    position: relative;
+    margin-left: 11%;
+    width: 43%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnARRLEFT {
+    position: relative;
+    margin-left: 0;
+    width: 45%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnARRUP {
+    position: relative;
+    margin-left: 11%;
+    width: 43%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+
+}
+
+#btnARRRIGHT {
+    position: relative;
+    margin-left: 0;
+    width: 45%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+
+}
+
+#btnARRDOWN {
+    position: relative;
+    margin-left: 11%;
+    width: 43%;
+    height: 95%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnA {
+    position: relative;
+    margin-left: 1%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnB {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnC {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnD {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnE {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnF {
+    position: relative;
+    margin-left: 1%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 7%;
+    cursor: pointer;
+}
+
+#btnG {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 7%;
+    cursor: pointer;
+}
+
+#btnH {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 7%;
+    cursor: pointer;
+}
+
+#btnI {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 7%;
+    cursor: pointer;
+}
+
+#btnJ {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 7%;
+    cursor: pointer;
+}
+
+#btnK {
+    position: relative;
+    margin-left: 1%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnL {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnM {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnN {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnO {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnP {
+    position: relative;
+    margin-left: 1%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnQ {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnR {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnS {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnT {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnU {
+    position: relative;
+    margin-left: 1%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnV {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnW {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnX {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnY {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnZ {
+    position: relative;
+    margin-left: 1%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnSLASH {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnSP {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnOVFY {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btnCLR {
+    position: relative;
+    margin-left: 7%;
+    width: 14%;
+    height: 12%;
+    float: left;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+#btn1 {
+    position: relative;
+    margin-left: 1%;
+    width: 26%;
+    height: 21%;
+    float: left;
+    cursor: pointer;
+}
+
+#btn2 {
+    position: relative;
+    margin-left: 12%;
+    width: 25%;
+    height: 21%;
+    float: left;
+    cursor: pointer;
+}
+
+#btn3 {
+    position: relative;
+    margin-left: 12%;
+    width: 24%;
+    height: 21%;
+    float: left;
+    cursor: pointer;
+}
+
+#btn4 {
+    position: relative;
+    margin-left: 1%;
+    margin-top: 7%;
+    width: 26%;
+    height: 21%;
+    float: left;
+    cursor: pointer;
+}
+
+#btn5 {
+    position: relative;
+    margin-left: 12%;
+    margin-top: 7%;
+    width: 24%;
+    height: 21%;
+    float: left;
+    cursor: pointer;
+}
+
+#btn6 {
+    position: relative;
+    margin-left: 12%;
+    margin-top: 7%;
+    width: 25%;
+    height: 21%;
+    float: left;
+    cursor: pointer;
+}
+
+#btn7 {
+    position: relative;
+    margin-left: 1%;
+    margin-top: 7%;
+    width: 26%;
+    height: 21%;
+    float: left;
+    cursor: pointer;
+}
+
+#btn8 {
+    position: relative;
+    margin-left: 12%;
+    margin-top: 7%;
+    width: 25%;
+    height: 21%;
+    float: left;
+    cursor: pointer;
+}
+
+#btn9 {
+    position: relative;
+    margin-left: 12%;
+    margin-top: 7%;
+    width: 24%;
+    height: 21%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnDOT {
+    position: relative;
+    margin-left: 1%;
+    margin-top: 7%;
+    width: 26%;
+    height: 21%;
+    float: left;
+    cursor: pointer;
+}
+
+#btn0 {
+    position: relative;
+    margin-left: 12%;
+    margin-top: 7%;
+    width: 25%;
+    height: 21%;
+    float: left;
+    cursor: pointer;
+}
+
+#btnPLUSMINUS {
+    position: relative;
+    margin-left: 12%;
+    margin-top: 7%;
+    width: 24%;
+    height: 21%;
+    float: left;
+    cursor: pointer;
+}
